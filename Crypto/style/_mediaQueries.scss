@@ -1,0 +1,33 @@
+
+@mixin media-breakpoint-md  {
+ @media screen and(max-width:786px){
+      @content;
+ }
+}
+@mixin media-breakpoint-sm  {
+ @media screen and(max-width:576px){
+      @content;
+ }
+}
+
+// html {
+//     font-size: 1rem;
+//   }
+
+  // @include media-breakpoint-sm {
+  //   html {
+  //     font-size: 30%;
+  //   }
+  // }
+  
+  @include media-breakpoint-md {
+    html {
+      font-size: 70%;
+    }
+  }
+  
+  // @include media-breakpoint-up(lg) {
+  //   html {
+  //     font-size: 1.6rem;
+  //   }
+  // }

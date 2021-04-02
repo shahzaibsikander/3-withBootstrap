@@ -1,0 +1,96 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@mixin media-breakpoint-md  {
+    @media screen and(max-width:786px){
+         @content;
+    }
+   }
+@mixin media-breakpoint-sm  {
+    @media screen and(max-width:576px){
+         @content;
+    }
+   }
+   
+@include media-breakpoint-md {
+       html {
+         font-size: 70%;
+       }
+     }
+     
+.header{
+    width: 100%;
+    height: 70vh;
+
+    &__headerImg{
+        width: 100%;
+        height: 100%;
+    }
+    &__headerCnt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: aqua;
+    }
+}
+
+.sec1{
+    background-color: #2E3D52;
+    
+    .sec1Card{
+        height: 70%;
+        & img{
+            height: 100%;
+        }
+    }
+
+    & span{
+        background-color: #394A68;
+    }
+    
+}
+
+.sec2{
+    background-color: #293446;
+
+    @include media-breakpoint-sm{
+        font-size: 50%;
+    }
+
+    & button{
+        padding: 0px 25px;
+        color: #fff;
+        background-color: #3E4B65;
+       
+    }
+    & .odd{
+        background-color: #030166;
+    }
+}
+
+.sec3{
+    background-color: #111437;
+
+    span{
+        background-color: #17194B;
+    }
+    .sec3Card{
+        height: 80%;
+        & img{
+            height: 81%;
+        }
+    }
+}
+
+.fixedImg{
+    background: url(../images/parallex.jpg) repeat  100%;
+    background-attachment: fixed;
+
+    &__fixedInner{
+        padding-top:17%;
+         
+     }
+ }
+

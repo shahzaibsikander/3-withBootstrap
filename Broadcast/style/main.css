@@ -1,0 +1,91 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+@media screen and (max-width: 786px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 70vh;
+}
+
+.header__headerImg {
+  width: 100%;
+  height: 100%;
+}
+
+.header__headerCnt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: aqua;
+}
+
+.sec1 {
+  background-color: #2E3D52;
+}
+
+.sec1 .sec1Card {
+  height: 70%;
+}
+
+.sec1 .sec1Card img {
+  height: 100%;
+}
+
+.sec1 span {
+  background-color: #394A68;
+}
+
+.sec2 {
+  background-color: #293446;
+}
+
+@media screen and (max-width: 576px) {
+  .sec2 {
+    font-size: 50%;
+  }
+}
+
+.sec2 button {
+  padding: 0px 25px;
+  color: #fff;
+  background-color: #3E4B65;
+}
+
+.sec2 .odd {
+  background-color: #030166;
+}
+
+.sec3 {
+  background-color: #111437;
+}
+
+.sec3 span {
+  background-color: #17194B;
+}
+
+.sec3 .sec3Card {
+  height: 80%;
+}
+
+.sec3 .sec3Card img {
+  height: 81%;
+}
+
+.fixedImg {
+  background: url(../images/parallex.jpg) repeat 100%;
+  background-attachment: fixed;
+}
+
+.fixedImg__fixedInner {
+  padding-top: 17%;
+}
+/*# sourceMappingURL=main.css.map */

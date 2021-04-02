@@ -1,0 +1,96 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@import"mediaQueries";
+
+$primary: #4c1998;
+
+@mixin primaryBtn {
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    background-color: #8d16d1;
+    border: none;
+}
+
+
+.menu{
+    background-color: $primary;
+
+     .register{
+        @include primaryBtn;
+        color: #fff
+    }
+    button{
+        @include primaryBtn;
+        background-color: #fff;
+    }
+
+}
+
+
+.header{
+    background-color: $primary;
+
+    & .row{
+        & .col{
+            color: #fff;
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+            & button{
+                @include primaryBtn;
+                background-color: #24bcf7;
+                color: #fff;
+            }
+            
+        }
+    }
+}
+
+.sec1{
+  & img{
+      height: 100%;
+      width: 100%;
+  }
+  & button{
+      @include primaryBtn;
+      color: #fff;
+
+  }
+}
+
+.sec2{
+    & i{
+        font-size: 40px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: $primary;
+    }
+}
+
+.sec3{
+    & i{
+        color: $primary;
+    }
+}
+
+.sec4{
+    height: 200px;
+
+    & button{
+        @include primaryBtn;
+        background-color: #fff;
+    }
+}
+
+.footer{
+    background-color: $primary;
+    color: #fff;
+
+    @include media-breakpoint-sm{
+        font-size: 50%;
+    }
+}
